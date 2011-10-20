@@ -1,6 +1,8 @@
 Devise LDAP Authenticatable
 ===========================
 
+**This fork honors a fix in net-ldap for the error [BerError: unsupported object type: id=139](https://github.com/ruby-ldap/ruby-net-ldap/issues/17).**
+
 Devise LDAP Authenticatable is a LDAP based authentication strategy for the [Devise](http://github.com/plataformatec/devise) authentication framework.
 
 If you are building applications for use within your organization which require authentication and you want to use LDAP, this plugin is for you.

@@ -4,7 +4,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{devise_ldap_authenticatable}
+  s.name = %q{prathe_devise_ldap_authenticatable}
   s.version = "0.4.10"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -120,14 +120,14 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<devise>, ["~> 1.4.0"])
-      s.add_runtime_dependency(%q<net-ldap>, ["~> 0.2.2"])
+      s.add_runtime_dependency(%q<prathe_net-ldap>, ["~> 0.2.2"])
     else
       s.add_dependency(%q<devise>, ["~> 1.4.0"])
-      s.add_dependency(%q<net-ldap>, ["~> 0.2.2"])
+      s.add_dependency(%q<prathe_net-ldap>, ["~> 0.2.2"])
     end
   else
     s.add_dependency(%q<devise>, ["~> 1.4.0"])
-    s.add_dependency(%q<net-ldap>, ["~> 0.2.2"])
+    s.add_dependency(%q<prathe_net-ldap>, ["~> 0.2.2"])
   end
 end
 
