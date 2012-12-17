@@ -79,7 +79,7 @@ module Devise
             begin
               @ldap.host = host
               @ldap.open do end
-            rescue Net::LDAP::LdapError
+            rescue Net::LDAP::LdapError, SystemCallError
               DeviseLdapAuthenticatable::Logger.send("Could not connect to #{@ldap.host}, trying next one")
               next
             else
