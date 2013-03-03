@@ -4,18 +4,20 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{prathe_devise_ldap_authenticatable}
+  s.name = "devise_ldap_authenticatable"
   s.version = "0.4.10"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Curtis Schiewek", "Daniel McNevin", "Steven Xu"]
-  s.date = %q{2011-10-17}
-  s.description = %q{LDAP authentication module for Devise}
-  s.email = %q{curtis.schiewek@gmail.com}
+  s.authors = ["Curtis Schiewek", "Daniel McNevin"]
+  s.date = "2013-03-03"
+  s.description = "LDAP authentication module for Devise"
+  s.email = "curtis.schiewek@gmail.com"
   s.extra_rdoc_files = [
     "README.md"
   ]
   s.files = [
+    "Gemfile",
+    "Gemfile.lock",
     "MIT-LICENSE",
     "README.md",
     "Rakefile",
@@ -37,6 +39,7 @@ Gem::Specification.new do |s|
     "test/ldap/base.ldif",
     "test/ldap/clear.ldif",
     "test/ldap/local.schema",
+    "test/ldap/openldap-data/run/.gitkeep",
     "test/ldap/run-server.sh",
     "test/ldap/server.pem",
     "test/ldap/slapd-ssl-test.conf",
@@ -68,6 +71,7 @@ Gem::Specification.new do |s|
     "test/rails_app/config/initializers/secret_token.rb",
     "test/rails_app/config/initializers/session_store.rb",
     "test/rails_app/config/ldap.yml",
+    "test/rails_app/config/ldap_with_boolean_ssl.yml",
     "test/rails_app/config/ldap_with_erb.yml",
     "test/rails_app/config/ldap_with_uid.yml",
     "test/rails_app/config/locales/devise.en.yml",
@@ -109,24 +113,44 @@ Gem::Specification.new do |s|
     "test/rails_app/test/unit/user_test.rb",
     "test/test_helper.rb"
   ]
-  s.homepage = %q{http://github.com/cschiewek/devise_ldap_authenticatable}
+  s.homepage = "http://github.com/cschiewek/devise_ldap_authenticatable"
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
-  s.summary = %q{LDAP authentication module for Devise}
+  s.rubygems_version = "2.0.0"
+  s.summary = "LDAP authentication module for Devise"
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
-    s.specification_version = 3
+    s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<devise>, ["~> 1.4.0"])
+      s.add_runtime_dependency(%q<devise_ldap_authenticatable>, [">= 0"])
+      s.add_development_dependency(%q<rake>, [">= 0"])
+      s.add_development_dependency(%q<rdoc>, [">= 0"])
+      s.add_development_dependency(%q<jeweler>, [">= 0"])
+      s.add_development_dependency(%q<rake>, [">= 0"])
+      s.add_development_dependency(%q<rdoc>, [">= 0"])
+      s.add_development_dependency(%q<jeweler>, [">= 0"])
+      s.add_runtime_dependency(%q<devise>, ["~> 1.5.4"])
       s.add_runtime_dependency(%q<prathe_net-ldap>, ["~> 0.2.2"])
     else
-      s.add_dependency(%q<devise>, ["~> 1.4.0"])
+      s.add_dependency(%q<devise_ldap_authenticatable>, [">= 0"])
+      s.add_dependency(%q<rake>, [">= 0"])
+      s.add_dependency(%q<rdoc>, [">= 0"])
+      s.add_dependency(%q<jeweler>, [">= 0"])
+      s.add_dependency(%q<rake>, [">= 0"])
+      s.add_dependency(%q<rdoc>, [">= 0"])
+      s.add_dependency(%q<jeweler>, [">= 0"])
+      s.add_dependency(%q<devise>, ["~> 1.5.4"])
       s.add_dependency(%q<prathe_net-ldap>, ["~> 0.2.2"])
     end
   else
-    s.add_dependency(%q<devise>, ["~> 1.4.0"])
+    s.add_dependency(%q<devise_ldap_authenticatable>, [">= 0"])
+    s.add_dependency(%q<rake>, [">= 0"])
+    s.add_dependency(%q<rdoc>, [">= 0"])
+    s.add_dependency(%q<jeweler>, [">= 0"])
+    s.add_dependency(%q<rake>, [">= 0"])
+    s.add_dependency(%q<rdoc>, [">= 0"])
+    s.add_dependency(%q<jeweler>, [">= 0"])
+    s.add_dependency(%q<devise>, ["~> 1.5.4"])
     s.add_dependency(%q<prathe_net-ldap>, ["~> 0.2.2"])
   end
 end
