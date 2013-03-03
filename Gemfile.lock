@@ -1,0 +1,26 @@
+PATH
+  remote: .
+  specs:
+    prathe_devise_ldap_authenticatable (0.4.10)
+      devise (~> 1.4.0)
+      prathe_net-ldap (~> 0.2.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bcrypt-ruby (3.0.1)
+    devise (1.4.9)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.0.3)
+      warden (~> 1.0.3)
+    orm_adapter (0.0.7)
+    prathe_net-ldap (0.2.20110317223538)
+    rack (1.5.2)
+    warden (1.0.6)
+      rack (>= 1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  prathe_devise_ldap_authenticatable!
