@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Curtis Schiewek", "Daniel McNevin"]
-  s.date = "2013-03-03"
+  s.date = "2013-03-04"
   s.description = "LDAP authentication module for Devise"
   s.email = "curtis.schiewek@gmail.com"
   s.extra_rdoc_files = [
@@ -129,7 +129,10 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<rake>, [">= 0"])
       s.add_development_dependency(%q<rdoc>, [">= 0"])
       s.add_development_dependency(%q<jeweler>, [">= 0"])
-      s.add_runtime_dependency(%q<devise>, ["~> 1.5.4"])
+      s.add_development_dependency(%q<rake>, [">= 0"])
+      s.add_development_dependency(%q<rdoc>, [">= 0"])
+      s.add_development_dependency(%q<jeweler>, [">= 0"])
+      s.add_runtime_dependency(%q<devise>, ["~> 2.2.3"])
       s.add_runtime_dependency(%q<prathe_net-ldap>, ["~> 0.2.2"])
     else
       s.add_dependency(%q<devise_ldap_authenticatable>, [">= 0"])
@@ -139,7 +142,10 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<rake>, [">= 0"])
       s.add_dependency(%q<rdoc>, [">= 0"])
       s.add_dependency(%q<jeweler>, [">= 0"])
-      s.add_dependency(%q<devise>, ["~> 1.5.4"])
+      s.add_dependency(%q<rake>, [">= 0"])
+      s.add_dependency(%q<rdoc>, [">= 0"])
+      s.add_dependency(%q<jeweler>, [">= 0"])
+      s.add_dependency(%q<devise>, ["~> 2.2.3"])
       s.add_dependency(%q<prathe_net-ldap>, ["~> 0.2.2"])
     end
   else
@@ -150,7 +156,10 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<rake>, [">= 0"])
     s.add_dependency(%q<rdoc>, [">= 0"])
     s.add_dependency(%q<jeweler>, [">= 0"])
-    s.add_dependency(%q<devise>, ["~> 1.5.4"])
+    s.add_dependency(%q<rake>, [">= 0"])
+    s.add_dependency(%q<rdoc>, [">= 0"])
+    s.add_dependency(%q<jeweler>, [">= 0"])
+    s.add_dependency(%q<devise>, ["~> 2.2.3"])
     s.add_dependency(%q<prathe_net-ldap>, ["~> 0.2.2"])
   end
 end

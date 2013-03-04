@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     devise_ldap_authenticatable (0.4.10)
-      devise
+      devise (~> 2.2.3)
       devise_ldap_authenticatable
       prathe_net-ldap (~> 0.2.2)
 
@@ -27,7 +27,7 @@ GEM
       multi_json (~> 1.0)
     bcrypt-ruby (3.0.1)
     builder (3.0.4)
-    devise (2.1.2)
+    devise (2.2.3)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (~> 3.1)
